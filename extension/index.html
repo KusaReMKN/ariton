@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ariton</title>
+<script src="ariton.js" defer></script>
+<style>
+* { box-sizing: border-box; }
+body { min-width: 320px; }
+input { font: inherit; }
+input[type="url"] { display: block; width: 100%; }
+button { display: block; width: 100%; margin-block: .5rem; height: 2rem; }
+.end { text-align: end; }
+</style>
+</head>
+<body>
+<header>
+<h1>Ariton</h1>
+</header>
+<form id="main">
+<button id="btnSend">Send current tab</button>
+<button id="btnRecv">Receive a tab</button>
+</form>
+<form id="formSetting">
+<fieldset>
+<legend>Server Setting</legend>
+<div class="flex">
+<label for="inputAritonURL">Ariton Server URL</label>
+<input type="url" id="inputAritonURL" class="grow" pattern="https?://.*" required>
+<hr>
+<button id="btnUpdate">Update</button>
+</fieldset>
+</form>
+</body>
+</html>

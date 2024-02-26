@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "ariton",
+	"version": "1.0.0",
+	"description": "隣の PC で同じページを簡単に開く",
+	"action": {
+		"default_popup": "index.html"
+	},
+	"permissions": [
+		"storage",
+		"tabs"
+	]
+}
